@@ -26,7 +26,7 @@ namespace UnitTestStressBallWeb
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestNytKast()
         {
             //string url = "http://localhost:3000";
             _driver.Navigate().GoToUrl("http://127.0.0.1:5501/nytkast.html");
@@ -36,6 +36,25 @@ namespace UnitTestStressBallWeb
             
             IWebElement buttonElement = _driver.FindElement(By.Id("button"));
             buttonElement.Click();
+        }
+        [TestMethod]
+        public void TestList()
+        {
+            //string url = "http://localhost:3000";
+            _driver.Navigate().GoToUrl("http://127.0.0.1:5501/nytkast.html");
+            
+            string title = _driver.Title;
+            Assert.AreEqual("Stressball - Liste", title);
+        }
+        
+        [TestMethod]
+        public void TestForSide()
+        {
+            //string url = "http://localhost:3000";
+            _driver.Navigate().GoToUrl("http://127.0.0.1:5501/nytkast.html");
+            
+            string title = _driver.Title;
+            Assert.AreEqual("Stressball - Forside", title);
         }
     }
 }
