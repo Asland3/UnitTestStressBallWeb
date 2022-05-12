@@ -37,7 +37,6 @@ namespace UnitTestStressBallWeb
             IWebElement buttonElement = _driver.FindElement(By.Id("button"));
             buttonElement.Click();
         }
-        
     }
 }
 
