@@ -35,7 +35,7 @@ namespace UnitTestStressBallWeb
         public void TestNytKast()
         {
             //string url = "http://localhost:3000";
-            _driver.Navigate().GoToUrl("https://stressballwebsite.azurewebsites.net/nytkast.html");
+            _driver.Navigate().GoToUrl("https://stressballwebsite.azurewebsites.net/index.html");
 
             string title = _driver.Title;
             Assert.AreEqual("Stressball - Nyt Kast", title);
@@ -67,7 +67,7 @@ namespace UnitTestStressBallWeb
 
         }
 
-        [TestMethod]
+        /*[TestMethod]
         public void TestForSide()
         {
             //string url = "http://localhost:3000";
@@ -76,5 +76,6 @@ namespace UnitTestStressBallWeb
             string title = _driver.Title;
             Assert.AreEqual("Stressball - Forside", title);
         }
+        */
     }
 }
